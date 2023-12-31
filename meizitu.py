@@ -35,7 +35,7 @@ def request_page(url):
 def get_page_urls():
 
     for i in range(1, 2):
-        baseurl = 'https://www.mzitu.com/page/{}'.format(i)
+        baseurl = 'https://www.ac0ae.com/{}'.format(i)
         html = request_page(baseurl)
         soup = BeautifulSoup(html, 'lxml')
         elements = soup.find(class_='postlist').find_all('li')
